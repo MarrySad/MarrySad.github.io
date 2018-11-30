@@ -913,7 +913,7 @@
 
 .partners {
   width: 100%;
-  background: linear-gradient(to top, rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("../img/partners-logos.jpg") no-repeat;
+  background: linear-gradient(to top, rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("../img/partners-logos.jpg") no-repeat center;
   padding: 137px 0;
   display: flex;
   justify-content: center; }
@@ -980,12 +980,43 @@
   color: #00bff3; }
 
 .text_link {
-  color: #959595;
-  text-decoration: none; }
+  text-decoration: none;
+  color: inherit; }
+  .text_link-inline {
+    color: #959595; }
   .text_link:hover {
-    color: #e2d8cb; }
+    color: #c7b29a; }
+    .text_link:hover .text_link-inline {
+      color: #c7b29a; }
   .text_link:active {
     color: #fff; }
+    .text_link:active .text_link-inline {
+      color: #fff; }
+
+.copyright {
+  padding: 35px 0;
+  background-color: #111111; }
+  .copyright-wrap {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+  .copyright-links {
+    font-family: "Montserrat Light", sans-serif;
+    color: #545454;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: left;
+    padding-left: 0; }
+    .copyright-links li {
+      display: inline;
+      padding: 0 15px;
+      border-right: 1px solid #545454; }
+      .copyright-links li:nth-last-child(1) {
+        border-right: none;
+        padding-right: 0; }
+      .copyright-links li:nth-child(1) {
+        padding-left: 0; }
 
 .main-header {
   width: 100%;
@@ -1026,7 +1057,6 @@
   .header-nav a {
     font-family: "Montserrat Light", sans-serif;
     font-size: 14px;
-    font-weight: 300;
     text-decoration: none;
     color: #fff;
     margin: 0 15px; }
