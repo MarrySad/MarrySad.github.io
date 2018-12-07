@@ -779,7 +779,8 @@ input[type="checkbox"]:checked ~ .header-nav {
   width: 100%;
   position: relative; }
   .video_presentation-video {
-    width: 100%; }
+    width: 100%;
+    object-fit: cover; }
   .video_presentation-layer {
     display: flex;
     justify-content: center;
@@ -1235,6 +1236,14 @@ input[type="checkbox"]:checked ~ .header-nav {
     display: none; }
 
   .wordpress {
-    display: none; } }
+    display: none; }
+
+  .projects {
+    padding: 30px 0; }
+    .projects-button-load {
+      margin-top: 0; }
+
+  .preview_wrap {
+    justify-content: center; } }
 
 /*# sourceMappingURL=style.css.map */
