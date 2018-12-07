@@ -61,13 +61,20 @@
 
   .services {
     flex-wrap: wrap;
-    padding: 0;
+    padding: 10px 0;
     &-elem-wrap {
-      margin: 10px 10px 10px 0;
-      &:nth-child(2n) {
-        margin-right: 0;
-      }
+      margin: 10px 5px;
     }
 
   }
+
+  .realisation_ideas {
+    display: none;
+  }
+
+  .wordpress {
+    display: none;
+  }
+
+
 }

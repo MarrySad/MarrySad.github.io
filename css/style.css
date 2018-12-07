@@ -1227,10 +1227,14 @@ input[type="checkbox"]:checked ~ .header-nav {
 
   .services {
     flex-wrap: wrap;
-    padding: 0; }
+    padding: 10px 0; }
     .services-elem-wrap {
-      margin: 10px 10px 10px 0; }
-      .services-elem-wrap:nth-child(2n) {
-        margin-right: 0; } }
+      margin: 10px 5px; }
+
+  .realisation_ideas {
+    display: none; }
+
+  .wordpress {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
