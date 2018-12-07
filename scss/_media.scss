@@ -1,0 +1,61 @@
+@media (max-width: 767px) {
+
+  .main-header {
+    position: relative;
+    background: linear-gradient(to top, rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("../img/header-backgr.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  .header-wrap {
+    max-width: 90%;
+    margin: 0;
+    justify-content: space-between;
+    padding: 30px 35px;
+  }
+
+  #label_menu {
+    display: block;
+    padding: 9px 0 9px 0;
+    div {
+      height: 9px;
+      width: 64px;
+      background-color: #fff;
+      margin: 6px auto;
+      position: relative;
+      left: 0;
+      &:nth-child(3), &:nth-child(4) {
+        top: -15px;
+      }
+    }
+  }
+
+  .header-nav {
+    display: none;
+    width: 90%;
+    position: absolute;
+    margin: 128px auto 0;
+    flex-direction: column;
+    ul {
+      width: 100%;
+      display: flex;
+      margin: 0 auto;
+      height: auto;
+      flex-direction: column;
+      li {
+        height: 40px;
+        /* border: 1px solid red; */
+        text-align: center;
+        background-color: #ccc;
+        margin-top: 2px;
+        a {
+          /* border: 1px solid green; */
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .slider {
+    display: none;
+  }
+}
