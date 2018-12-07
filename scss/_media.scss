@@ -58,4 +58,16 @@
   .slider {
     display: none;
   }
+
+  .services {
+    flex-wrap: wrap;
+    padding: 0;
+    &-elem-wrap {
+      margin: 10px 10px 10px 0;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+
+  }
 }

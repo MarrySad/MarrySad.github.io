@@ -1223,6 +1223,14 @@ input[type="checkbox"]:checked ~ .header-nav {
           width: 100%; }
 
   .slider {
-    display: none; } }
+    display: none; }
+
+  .services {
+    flex-wrap: wrap;
+    padding: 0; }
+    .services-elem-wrap {
+      margin: 10px 10px 10px 0; }
+      .services-elem-wrap:nth-child(2n) {
+        margin-right: 0; } }
 
 /*# sourceMappingURL=style.css.map */
