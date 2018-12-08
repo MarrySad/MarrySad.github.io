@@ -148,8 +148,8 @@
   z-index: 10; }
 
 .header-wrap {
-  max-width: 100%;
-  width: 1170px;
+  width: 100%;
+  max-width: 1170px;
   margin: 40px auto 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -661,10 +661,11 @@ input[type="checkbox"]:checked ~ .header-nav {
     line-height: 28px;
     text-align: center; }
   .projects-buttons-wrap {
-    width: 615px;
+    max-width: 615px;
     margin: 40px auto;
     display: flex;
-    justify-content: space-between; }
+    justify-content: center;
+    flex-wrap: wrap; }
   .projects-button {
     margin: 0 5px;
     border: solid 1px #ebebeb;
@@ -837,6 +838,8 @@ input[type="checkbox"]:checked ~ .header-nav {
   width: 100%;
   padding-top: 80px;
   background-color: #fbfaf8; }
+  .mobile_devices-img {
+    align-self: flex-end; }
   .mobile_devices-wrap_text {
     width: 670px;
     padding-left: 30px;
@@ -928,7 +931,7 @@ input[type="checkbox"]:checked ~ .header-nav {
     text-align: center;
     margin-top: 0; }
   .recent_posts-p {
-    width: 770px;
+    max-width: 770px;
     margin: 10px auto;
     font-family: "Montserrat Light", sans-serif;
     color: #8c8c8c;
@@ -1071,12 +1074,20 @@ input[type="checkbox"]:checked ~ .header-nav {
 .partners {
   width: 100%;
   background: linear-gradient(to top, rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("../img/partners-logos.jpg") no-repeat center;
+  background-size: cover;
   padding: 137px 0;
   display: flex;
   justify-content: center; }
   .partners-link {
     margin: 0 45px;
     align-self: center; }
+  .partners-link:first-child {
+    margin-left: 0; }
+  .partners-link:last-child {
+    margin-right: 0; }
+  .partners-img {
+    width: 100%;
+    max-width: 210px; }
   .partners-img:hover {
     filter: invert(50%); }
 
@@ -1176,6 +1187,9 @@ input[type="checkbox"]:checked ~ .header-nav {
       .copyright-links li:nth-child(1) {
         padding-left: 0; }
 
+.for_mobile_ver {
+  display: none; }
+
 @media (max-width: 767px) {
   .main-header {
     position: relative;
@@ -1183,10 +1197,10 @@ input[type="checkbox"]:checked ~ .header-nav {
     background-size: cover; }
 
   .header-wrap {
-    max-width: 90%;
     margin: 0;
     justify-content: space-between;
-    padding: 30px 35px; }
+    padding: 30px 35px;
+    box-sizing: border-box; }
 
   #label_menu {
     display: block;
@@ -1240,10 +1254,97 @@ input[type="checkbox"]:checked ~ .header-nav {
 
   .projects {
     padding: 30px 0; }
+    .projects-p {
+      margin-bottom: 30px; }
+    .projects-buttons-wrap {
+      margin: 30px auto; }
+    .projects-button {
+      margin: 5px 5px; }
     .projects-button-load {
       margin-top: 0; }
 
   .preview_wrap {
-    justify-content: center; } }
+    justify-content: center; }
+
+  .mobile_devices {
+    flex-wrap: wrap;
+    padding: 40px 10px 0 40px;
+    box-sizing: border-box; }
+    .mobile_devices-h2 {
+      display: none; }
+    .mobile_devices-p {
+      display: none; }
+    .mobile_devices-features {
+      font-size: 13px;
+      font-weight: bold;
+      padding-left: 0;
+      margin-top: 0; }
+      .mobile_devices-features li:before {
+        left: 15px; }
+    .mobile_devices-wrap_text {
+      width: 60%;
+      max-width: 60%;
+      padding-left: 0;
+      align-self: baseline;
+      margin-top: 0; }
+    .mobile_devices-img {
+      width: auto;
+      height: 350px;
+      margin-right: -45px; }
+
+  .for_mobile_ver {
+    display: block; }
+
+  .counters {
+    justify-content: space-between;
+    padding: 30px 0; }
+    .counters-wrap_elem {
+      width: 19%; }
+      .counters-wrap_elem-icon {
+        width: 100%;
+        height: 33px; }
+      .counters-wrap_elem-count {
+        font-size: 30px;
+        margin: 13px 0 6px; }
+      .counters-wrap_elem-text {
+        font-size: 10px;
+        margin: 7px 0 16px; }
+
+  .recent_posts {
+    padding: 40px 0; }
+    .recent_posts-wrap {
+      justify-content: center; }
+    .recent_posts-elem {
+      margin: 12px 0; }
+    .recent_posts-btn-wrap {
+      display: none; }
+
+  .partners {
+    padding: 7% 0; }
+    .partners-img {
+      width: 100%;
+      min-width: 100px; }
+    .partners-link {
+      margin: 0 3%; }
+
+  .other_info {
+    flex-direction: column;
+    padding: 35px; }
+    .other_info-column {
+      width: auto;
+      margin-left: 0; }
+
+  .main-footer-dribbble_widget-img {
+    margin: 0 6px 0 0; }
+  .main-footer-dribbble_widget-img:nth-child(2n) {
+    margin-right: 6px; }
+
+  .copyright {
+    padding: 20px 0; }
+    .copyright-wrap {
+      flex-direction: column;
+      justify-content: center; }
+    .copyright-links {
+      margin: 13px auto; } }
 
 /*# sourceMappingURL=style.css.map */
