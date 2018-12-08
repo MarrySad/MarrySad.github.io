@@ -9,22 +9,22 @@
   text-decoration: none;
   color: white;
   border-radius: 3px;
-  background-color:  #998675;
+  background-color: #998675;
   box-sizing: border-box;
   span {
     margin: auto;
     text-transform: uppercase;
-    font-family: "Raleway Extrabold", sans-serif ;
+    font-family: "Raleway Extrabold", sans-serif;
     font-size: 14px;
     line-height: 23px;
     text-align: center;
   }
   &:hover {
-    background-color: lighten(#998675,30%);
+    background-color: lighten(#998675, 30%);
     color: #998675;
     border: 1px solid #998675;
   }
   &:active {
-    background-color: lighten(#998675,40%);
+    background-color: lighten(#998675, 40%);
   }
 }

@@ -16,12 +16,14 @@
   flex-direction: column;
   width: 270px;
   color: $color-title;
+
   svg {
     display: block;
     fill: $color-title;
     margin: 0 auto;
     height: 49px;
   }
+
   &:after {
     content: "";
     display: block;
@@ -31,13 +33,16 @@
     margin: 0 auto;
     align-self: flex-end;
   }
+
   &:hover {
     svg {
       fill: $color-hover;
     }
+
     .section-h2 {
       color: $color-hover;
     }
+
     &:after {
       background-color: $color-hover;
     }
@@ -63,6 +68,7 @@
 
 .realisation_ideas {
   background-color: $section-color-d;
+
   &-wrap {
     max-width: 100%;
     width: 1230px;
@@ -70,6 +76,7 @@
     padding-top: 58px;
     position: relative;
   }
+
   &-h2 {
     font-family: "Raleway Semibold", sans-serif;
     width: 100%;
@@ -78,6 +85,7 @@
     text-align: center;
     color: $color-title;
   }
+
   &-p {
     font-family: "Montserrat Light", sans-serif;
     width: 770px;
@@ -88,6 +96,7 @@
     line-height: 28px;
     text-align: center;
   }
+
   &-img {
     display: block;
     width: 770px;
@@ -96,20 +105,24 @@
     z-index: 2;
     background-color: $background-img-color;
   }
+
   &-img:nth-child(4) {
     position: absolute;
     bottom: 0;
     left: 0;
     z-index: 1;
+
     &:hover {
       z-index: 3;
     }
   }
+
   &-img:nth-child(5) {
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: 1;
+
     &:hover {
       z-index: 3;
     }
@@ -122,6 +135,7 @@
   background: -o-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
   background: -ms-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
   background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+
   &-wrap {
     max-width: 100%;
     width: 1170px;
@@ -131,11 +145,13 @@
     justify-content: space-between;
     align-items: center;
   }
+
   &-wrap-text {
     width: 70%;
     display: flex;
     flex-direction: column;
   }
+
   &-h2 {
     font-family: "Raleway Regular", sans-serif;
     color: $color-white;
@@ -143,10 +159,12 @@
     font-weight: 400;
     text-align: left;
     margin: 0 0 8px 0;
+
     span {
       color: $color-hover;
     }
   }
+
   &-p {
     font-family: "Montserrat Light", sans-serif;
     color: #615855;
@@ -155,6 +173,7 @@
     text-align: left;
     margin: 0;
   }
+
   &-button {
     @include button;
   }
@@ -163,6 +182,7 @@
 .projects {
   background-color: $section-color-l;
   padding: 80px 0;
+
   &-h2 {
     font-family: "Raleway Semibold", sans-serif;
     width: 100%;
@@ -173,6 +193,7 @@
     text-align: center;
     color: $color-title;
   }
+
   &-p {
     font-family: "Montserrat Light", sans-serif;
     max-width: 770px;
@@ -183,6 +204,7 @@
     line-height: 28px;
     text-align: center;
   }
+
   &-buttons-wrap {
     max-width: 615px;
     margin: 40px auto;
@@ -190,6 +212,7 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+
   &-button {
     margin: 0 5px;
     border: solid 1px #ebebeb;
@@ -200,17 +223,20 @@
     font-family: "Montserrat Light", sans-serif;
     font-size: 14px;
     outline: none;
+
     &:hover {
       color: white;
       background-color: #998675;
       border-color: #998675;
     }
+
     &:active {
       color: white;
       background-color: lighten(#998675, 15%);
       border-color: #998675;
     }
   }
+
   &-button-load {
     @include button;
     outline: none;
@@ -229,16 +255,19 @@
 .preview {
   margin-bottom: 30px;
   position: relative;
+
   &-img {
     background-color: $background-img-color;
     width: 370px;
     height: 237px;
     margin-bottom: -4px;
   }
+
   &-text_wrap {
     background-color: #fbfaf8;
     padding: 28px 30px 20px 30px;
     position: relative;
+
     &:after {
       content: "";
       border: 15px solid transparent;
@@ -248,12 +277,14 @@
       top: -25px;
     }
   }
+
   &-title {
     font-family: "Raleway Medium", sans-serif;
     color: $color-hover;
     font-size: 20px;
     text-align: left;
   }
+
   &-p {
     font-family: "Montserrat Light", sans-serif;
     color: #d1d1d1;
@@ -262,6 +293,7 @@
     text-align: left;
     margin-bottom: 0;
   }
+
   &-link, &-view {
     display: none;
     width: 26px;
@@ -271,30 +303,38 @@
     position: absolute;
     top: 106px;
   }
+
   &-link {
     background: url("../img/icons/link.png") center no-repeat;
     left: 145px;
+
     &:hover {
       background: url("../img/icons/link-hover.png") center no-repeat;
     }
   }
+
   &-view {
     background: url("../img/icons/lupa.png") center no-repeat;
     right: 145px;
+
     &:hover {
       background: url("../img/icons/lupa-hover.png") center no-repeat;
     }
   }
+
   &:hover {
     .preview-img {
       filter: brightness(0.4);
     }
+
     .preview-text_wrap {
       background-color: #362f2d;
+
       &:after {
         border-bottom-color: #362f2d;
       }
     }
+
     .preview-link, .preview-view {
       display: block;
     }
@@ -304,10 +344,12 @@
 .video_presentation {
   width: 100%;
   position: relative;
+
   &-video {
     width: 100%;
     object-fit: cover;
   }
+
   &-layer {
     display: flex;
     justify-content: center;
@@ -318,6 +360,7 @@
     position: absolute;
     top: 0;
     left: 0;
+
     &-play_btn {
       display: block;
       width: 100px;
@@ -329,13 +372,16 @@
       outline: none;
       fill: white;
       background-color: rgba(0, 0, 0, 0.2);
+
       &:hover {
         fill: $color-hover;
       }
+
       &--hide {
         display: none;
       }
     }
+
     &-title {
       display: block;
       width: 100%;
@@ -344,6 +390,7 @@
       font-size: 30px;
       text-align: center;
     }
+
     &-p {
       max-width: 570px;
       margin: 30px auto 0 auto;
@@ -353,6 +400,7 @@
       line-height: 28px;
       text-align: center;
     }
+
     &-time {
       margin-top: 40px;
       display: block;
@@ -376,18 +424,21 @@
   &-img {
     align-self: flex-end;
   }
+
   &-wrap_text {
     width: 670px;
     padding-left: 30px;
     margin-top: -40px;
     align-self: center;
   }
+
   &-h2 {
     font-family: "Raleway Semibold", sans-serif;
     color: #555555;
     font-size: 30px;
     text-align: left;
   }
+
   &-p {
     font-family: "Montserrat Light", sans-serif;
     color: #8c8c8c;
@@ -395,6 +446,7 @@
     line-height: 28px;
     margin: 30px 0;
   }
+
   &-features {
     font-family: "Montserrat Light", sans-serif;
     color: #8c8c8c;
@@ -402,10 +454,12 @@
     line-height: 32px;
     list-style: none;
     padding-left: 50px;
+
     li {
       position: relative;
       padding-left: 50px;
     }
+
     li:before {
       content: '';
       background-image: url("../img/icons/icon_li.png");
@@ -428,8 +482,10 @@
   background: -o-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
   background: -ms-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
   background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+
   &-wrap_elem {
     width: 200px;
+
     &:after {
       content: "";
       display: block;
@@ -439,12 +495,14 @@
       margin: 0 auto;
       align-self: flex-end;
     }
+
     &-icon {
       fill: $background-img-color;
       width: 100%;
       height: 44px;
       align-items: center;
     }
+
     &-count {
       display: block;
       font-family: "Montserrat ExtraLight", sans-serif;
@@ -454,6 +512,7 @@
       text-align: center;
       margin: 30px 0 13px;
     }
+
     &-text {
       display: block;
       font-family: "Montserrat Light", sans-serif;
@@ -472,6 +531,7 @@
   width: 100%;
   padding: 80px 0;
   background-color: $section-color-l;
+
   &-h2 {
     width: 100%;
     font-family: "Raleway Semibold", sans-serif;
@@ -480,6 +540,7 @@
     text-align: center;
     margin-top: 0;
   }
+
   &-p {
     max-width: 770px;
     margin: 10px auto;
@@ -489,6 +550,7 @@
     line-height: 28px;
     text-align: center;
   }
+
   &-wrap {
     max-width: 1170px;
     margin: 0 auto;
@@ -496,15 +558,18 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
+
   &-elem {
     width: 370px;
     margin: 40px 0;
     position: relative;
+
     &-img {
       width: 370px;
       height: 220px;
       background: $background-img-color;
     }
+
     &-text {
       border: 1px solid #f8f8f8;
       border-top: none;
@@ -512,12 +577,14 @@
       padding: 30px;
       margin-top: -4px;
     }
+
     &-title {
       font-family: "Raleway Medium", sans-serif;
       color: $color-title;
       font-size: 20px;
       text-align: left;
     }
+
     &-p {
       font-family: "Montserrat Light", sans-serif;
       color: $color-p;
@@ -526,6 +593,7 @@
       line-height: 22px;
       text-align: left;
     }
+
     &-link {
       font-family: "Montserrat Light", sans-serif;
       color: $color-hover;
@@ -535,18 +603,23 @@
       line-height: 20px;
       text-align: left;
       position: relative;
+
       &:hover {
         color: lighten(#c7b29a, 15%);
+
         &:after {
           border-left-color: lighten(#c7b29a, 15%);
         }
       }
+
       &:active {
         color: #fff;
+
         &:after {
           border-left-color: #ffffff;
         }
       }
+
       &:after {
         content: "";
         border: 5px solid transparent;
@@ -556,6 +629,7 @@
         top: 2px;
       }
     }
+
     &-date {
       position: absolute;
       width: 50px;
@@ -563,6 +637,7 @@
       top: 20px;
       left: 20px;
       z-index: 1;
+
       &-number {
         display: block;
         padding: 4px 3px;
@@ -574,6 +649,7 @@
         border-top-right-radius: 3px;
         background-color: #363636;
       }
+
       &-month {
         display: block;
         padding: 5px 3px;
@@ -587,25 +663,31 @@
         background-color: #252525;
       }
     }
+
     &:hover {
       .recent_posts-elem-img {
         filter: brightness(0.3);
       }
+
       .recent_posts-elem {
         &-text {
           background-color: #362f2d;
           border-color: transparent;
         }
+
         &-title {
           color: #c7b299;
         }
+
         &-p {
           color: #fff;
         }
+
         &-date {
           &-number {
             background-color: #c7b299;
           }
+
           &-month {
             background-color: #a48d72;
           }
@@ -613,10 +695,12 @@
       }
     }
   }
+
   &-btn-wrap {
     width: 64px;
     margin: 0 auto;
   }
+
   &-btn {
     width: 22px;
     height: 22px;
@@ -626,6 +710,7 @@
     padding: 0;
     margin: 0 4px;
     fill: #d1d1d1;
+
     &:hover {
       fill: $color-hover;
     }
@@ -638,6 +723,7 @@
   position: absolute;
   top: 177px;
   left: 125px;
+
   &-link {
     display: block;
     width: 11px;
@@ -647,10 +733,12 @@
     opacity: 0.5;
     border: 2px solid #343536;
     border-radius: 50%;
+
     &:hover {
       background-color: transparent;
       border-color: white;
     }
+
     &:active {
       opacity: 0.9;
     }
@@ -664,20 +752,25 @@
   padding: 137px 0;
   display: flex;
   justify-content: center;
+
   &-link {
     margin: 0 45px;
     align-self: center;
   }
+
   &-link:first-child {
     margin-left: 0;
   }
+
   &-link:last-child {
     margin-right: 0;
   }
+
   &-img {
     width: 100%;
     max-width: 210px;
   }
+
   &-img:hover {
     filter: invert(50%);
   }
@@ -688,16 +781,20 @@
   display: flex;
   padding: 80px 0;
   justify-content: center;
+
   &-column {
     width: 270px;
     margin-left: 30px;
   }
+
   &-column:nth-child(1) {
     margin-left: 0;
+
     p {
       margin: 20px 0;
       line-height: 24px;
     }
+
     &:hover {
       .main-footer-p {
         color: $color-hover;
@@ -713,6 +810,7 @@
     font-size: 24px;
     text-align: left;
   }
+
   &-time {
     font-family: "Montserrat Light", sans-serif;
     color: #363636;
@@ -721,6 +819,7 @@
     text-align: left;
     font-weight: bold;
   }
+
   &-p {
     font-family: "Montserrat Light", sans-serif;
     color: #545454;
@@ -730,28 +829,35 @@
     font-weight: bold;
     margin: 0;
   }
+
   &-post {
     border-bottom: 2px solid #252525;
     padding-bottom: 19px;
     margin-bottom: 13px;
+
     &:hover {
       .main-footer-time {
         color: white;
       }
+
       .main-footer-p {
         color: $color-hover;
       }
     }
   }
+
   &-post:nth-child(4n) {
     border-bottom: none;
   }
+
   &-dribbble_widget-img {
     margin: 0 6px 6px 0;
+
     &:hover {
       filter: brightness(120%);
     }
   }
+
   &-dribbble_widget-img:nth-child(2n) {
     margin-right: 0;
   }
@@ -764,17 +870,22 @@
 .text_link {
   text-decoration: none;
   color: inherit;
+
   &-inline {
     color: rgb(149, 149, 149);
   }
+
   &:hover {
     color: $color-hover;
+
     .text_link-inline {
       color: $color-hover;
     }
   }
+
   &:active {
     color: #fff;
+
     .text_link-inline {
       color: #fff;
     }
@@ -784,6 +895,7 @@
 .copyright {
   padding: 35px 0;
   background-color: #111111;
+
   &-wrap {
     width: 100%;
     max-width: 1170px;
@@ -791,6 +903,7 @@
     display: flex;
     justify-content: space-between;
   }
+
   &-links {
     font-family: "Montserrat Light", sans-serif;
     color: #545454;
@@ -798,14 +911,17 @@
     line-height: 20px;
     text-align: left;
     padding-left: 0;
+
     li {
       display: inline;
       padding: 0 15px;
       border-right: 1px solid #545454;
+
       &:nth-last-child(1) {
         border-right: none;
         padding-right: 0;
       }
+
       &:nth-child(1) {
         padding-left: 0;
       }

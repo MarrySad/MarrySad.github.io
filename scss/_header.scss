@@ -22,8 +22,10 @@
   align-items: center;
   text-decoration: none;
   color: $color-white;
+
   &:hover {
     color: $color-hover;
+
     .logo {
       fill: $color-hover
     }
@@ -44,16 +46,20 @@
     padding-left: 0;
 
   }
+
   display: flex;
+
   li {
     display: inline;
   }
+
   a {
     font-family: $font-small-text;
     font-size: 14px;
     text-decoration: none;
     color: $color-white;
     margin: 0 15px;
+
     &:hover {
       color: $color-hover;
     }
@@ -74,18 +80,20 @@ input[type="checkbox"]:checked ~ .header-nav {
   display: flex;
 }
 
-.cart {
+#cart {
   margin: 0 14px 0 50px;
   padding: 15px 0;
-  svg{
+
+  svg {
     fill: $color-white;
+
     &:hover {
       fill: $color-hover
     }
   }
 }
 
-.form-search{
+.form-search {
   margin-left: 14px;
   padding: 7px 0;
 }
@@ -98,6 +106,7 @@ input[type="checkbox"]:checked ~ .header-nav {
   border: none;
   background-size: contain;
   background: url('../img/icons/icon-search.png') no-repeat center;
+
   &:focus {
     width: 152px;
     transition: width 1s ease-out, background-position 1s ease-out;
