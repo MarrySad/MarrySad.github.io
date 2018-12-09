@@ -132,6 +132,10 @@
     }
   }
 
+  .preview-img {
+    max-width: 100%;
+  }
+
   .preview_wrap {
     justify-content: center;
   }
@@ -210,6 +214,9 @@
 
     &-elem {
       margin: 12px 0;
+      &-img {
+        max-width: 100%;
+      }
     }
 
     &-btn-wrap {
@@ -222,7 +229,6 @@
 
     &-img {
       width: 100%;
-      min-width: 100px;
     }
 
     &-link {
@@ -240,10 +246,6 @@
     }
   }
   .main-footer-dribbble_widget {
-    &-img {
-      margin: 0 6px 0 0;
-    }
-
     &-img:nth-child(2n) {
       margin-right: 6px;
     }
