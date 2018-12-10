@@ -1831,8 +1831,8 @@ input[type="checkbox"]:checked ~ .header-nav {
     }
 
     .mobile_devices-img {
-        width: auto;
-        height: 350px;
+        width: 40%;
+        height: auto;
         margin-right: -45px;
     }
 
